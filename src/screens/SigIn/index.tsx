@@ -3,21 +3,17 @@ import React, { useState } from "react";
 import { Container, Image, Content, Title, SubTitle } from "./styles";
 
 import IllustrationImg from "../../assets/illustration.png";
-import { StatusBar } from "react-native";
+
 import { ButtonIcon } from "../../../components/ButtonIcon";
 
 export function SignIn() {
   return (
     <Container>
-      <StatusBar
-        barStyle={"light-content"}
-        backgroundColor="transparent"
-        translucent
-      />
+      
       <Image source={IllustrationImg} resizeMode="stretch" />
       <Content>
         <Title>
-          Organize {`\n`}
+          Conecte-se {`\n`}
           suas jogatinas {`\n`}
           facilmente
         </Title>
