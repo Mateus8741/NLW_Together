@@ -10,9 +10,9 @@ interface Props extends TouchableOpacityProps {
   title?: string;
 }
 
-export function ButtonIcon({ title, ...rest }: Props) {
+export function ButtonIcon({ title, onPress, ...rest }: Props) {
   return (
-    <Container>
+    <Container onPress={onPress}>
       <IconWrapper>
         <Icon source={DiscordImg} />
       </IconWrapper>
