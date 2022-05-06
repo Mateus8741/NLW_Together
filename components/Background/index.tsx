@@ -11,9 +11,10 @@ interface Props {
 export function Background({ children }: Props) {
   return (
     <LinearGradient
+      style={{ flex: 1 }}
       colors={[theme.colors.secondary80, theme.colors.secondary100]}
     >
-      {children}
+      <>{children}</>
     </LinearGradient>
   );
 }

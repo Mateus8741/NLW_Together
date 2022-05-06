@@ -1,8 +1,11 @@
-import { theme } from "./../../src/global/styles/theme";
 import styled from "styled-components/native";
+
+import { theme } from "./../../src/global/styles/theme";
 
 export const Container = styled.View`
   flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
 `;
 
 export const User = styled.View`

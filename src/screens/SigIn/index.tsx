@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 
-import { Container, Image, Content, Title, SubTitle } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
-import IllustrationImg from "../../assets/illustration.png";
+import { Container, Image, Content, Title, SubTitle } from "./styles";
 
 import { ButtonIcon } from "../../../components/ButtonIcon";
 
+import IllustrationImg from "../../assets/illustration.png";
+
 export function SignIn() {
+  const navigation = useNavigation<any>();
+
   return (
     <Container>
-      
       <Image source={IllustrationImg} resizeMode="stretch" />
       <Content>
         <Title>
@@ -22,9 +25,10 @@ export function SignIn() {
           Crie grupos para jogar seus games {`\n`}
           favoritos com seus amigos
         </SubTitle>
-        <ButtonIcon 
+        <ButtonIcon
+          onPress={() => navigation.navigate("Home")}
           title="Entrar com Discord"
-          activeOpacity={.7}
+          activeOpacity={0.7}
         />
       </Content>
     </Container>

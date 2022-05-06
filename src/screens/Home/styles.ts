@@ -11,7 +11,7 @@ export const Header = styled.View`
   padding: 0 24px;
   flex-direction: row;
   justify-content: center;
-  margin-top: ${getStatusBarHeight()} + 26px;
+  margin-top: 26px;
   margin-bottom: 42px;
 `;
 
